@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - MCU</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ef338597d8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Ana Sayfa</a></li>
+                <li><a href="#about">Hakkımda</a></li>
+                <li><a href="#services">Diller</a></li>
+                <li><a href="#portfolio">Projelerim</a></li>
+                <li><a href="#contact">İletişim</a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Industrial Engineer / Full Stack .Net Developer</p>
+            <h1>Merhaba, ben <span>Mehmet Can </span></h1>
+        </div>
+    </div>
+</div>
+
+<!-- ------------about--------------- -->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">Hakkımda</h1>
+                <p>Merhaba! Ben, Mehmet Can Ünaldı, Kocaeli Üniversitesi Endüstri Mühendisliği mezunuyum ve şu anda web geliştirme alanında eğitim alıyorum. Web geliştirme, yaratıcı düşünme ve teknolojik becerilerimi bir araya getirmemi sağlıyor. HTML, CSS, JavaScript gibi web teknolojilerini öğrenerek, kendi projelerimi oluşturmayı ve dijital dünyada varlık göstermeyi hedefliyorum.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">İçerik</p>
+                    <p class="tab-links" onclick="opentab('experience')">Deneyim</p>
+                    <p class="tab-links" onclick="opentab('education')">Eğitim</p>
+                </div>
+                <div class="tab-contents active-tab", id="skills">
+                    <ul>
+                        <li><span>HTML,CSS,JS,C#</span><br></li>
+                        <li><span>PYTHON</span><br></li>
+                        <li><span>SQL-ORACLE</span><br></li>
+                        <li><span>MICROSOFT OFFICE</span><br></li>
+                    </ul>
+                </div>
+                <div class="tab-contents", id="experience">
+                    <ul>
+                        <li><span>MTM Specialist</span><br>LC WAIKIKI, Istanbul,Turkey</li>
+                        <li><span>Planner</span><br>TAHA GİYİM, LC WAIKIKI Istanbul,Turkey</li>
+                        <li><span>Sales Consultant</span><br>LC WAIKIKI, Kocaeli,Turkey</li>
+                    </ul>
+                </div>
+                <div class="tab-contents", id="education">
+                    <ul>
+                        <li><span>Industrial Engineer</span><br>Kocaeli University</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- ------services---------- -->
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Diller</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>HTML</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione esse impedit, non sed veniam, odit, consectetur facilis voluptatibus mollitia delectus explicabo ducimus sunt doloremque exercitationem numquam harum laborum fuga praesentium.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-css3-alt"></i>
+                <h2>CSS</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione esse impedit, non sed veniam, odit, consectetur facilis voluptatibus mollitia delectus explicabo ducimus sunt doloremque exercitationem numquam harum laborum fuga praesentium.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-js"></i>
+                <h2>JS</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione esse impedit, non sed veniam, odit, consectetur facilis voluptatibus mollitia delectus explicabo ducimus sunt doloremque exercitationem numquam harum laborum fuga praesentium.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- -------Portfolio----------- -->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Projelerim</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/htmll.jpg">
+                <div class="layer">
+                    <h3>HTML</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam dolore nulla libero itaque quas molestiae, dolor cupiditate, deleniti soluta cum sapiente optio amet. Debitis autem placeat nam dignissimos adipisci architecto.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/csss.jpg">
+                <div class="layer">
+                    <h3>CSS</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque debitis nobis numquam sint amet quasi, illum cum voluptates enim laudantium voluptas perspiciatis tempora vel placeat perferendis, magnam impedit consequatur. Nam.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/jss.jpg">
+                <div class="layer">
+                    <h3>JS</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint sapiente odit facere, accusantium fuga animi quae, culpa quos voluptatum dolorem quas aspernatur, maxime fugit asperiores modi ab qui rerum nisi?</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">Daha fazlasını gör</a>
+    </div>
+</div>
+
+<!-- -----------contact----------- -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Bana ulaşın</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> mehmetcanunaldi@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> +90 (555) 555 55 55</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/mcunaldi"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/home"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/mcunaldi"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/mcunaldi"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/Mehmet Can ÜNALDI 06.11.2023.pdf" download class="btn btn2">CV'mi İnceleyebilirsiniz.</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name = "Name" placeholder="Adınız" required>
+                    <input type="email" name = "Email" placeholder="Mailiniz" required>
+                    <textarea name="Message" rows="6" placeholder="Mesajınız..."></textarea>
+                    <button type="submit" class="btn btn2">Gönder</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Telif Hakkı © 2023, MCU tarafından üm hakları kopyalanmıştır. <i class="fa-solid fa-heart"></i> </p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu")
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyN8X_fcSGI6RVfC7rY9tQV4hVi-QzR4yNInHKtrBeqWFjGoLlRv6lM1M3GENOVhh-9/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
